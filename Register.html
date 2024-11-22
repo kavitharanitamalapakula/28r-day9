@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <form action="./Registersuccess.html">
+            <input type="text" name="Username" required placeholder="Enter Username"
+                pattern="(?=.*[a-z])(?=.*[A-Z]).{5,20}"
+                title="Enter min 5 and max 20 characters with capital and small">
+            <br>
+            <br>
+            <input type="text" placeholder="Enter password" required
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[@#$%&*!]).{8,16}"
+                title="Use atleast one capital,small,special character and digit with min 8">
+            <br>
+            <br>
+            <input type="email" id="email"
+                pattern="[a-zA-Z0-9.]+@(gmail.com|yahoo.com|outlook.com|gmail.in|yahoo.in|outlook.in|gmail.org|yahoo.org|outlook.org)"
+                placeholder="Enter your email" required>
+            <br>
+            <br>
+            <button>Register</button>
+            <!-- <a href="./Registersuccess.html"> <button >Register</button></a> -->
+
+
+        </form>
+    </center>
+</body>
+
+</html>

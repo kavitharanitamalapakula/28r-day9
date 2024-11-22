@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+
+<body>
+
+    <center>
+        Login A Page
+        <br>
+        <br>
+        <form action="./loginsuccess.html" method="get">
+            <input type="text" name="Username" required placeholder="Enter Username"
+                pattern="(?=.*[a-z])(?=.*[A-Z]).{5,20}"
+                title="Enter min 5 and max 20 characters with capital and small">
+            <br>
+            <br>
+            <input type="text" placeholder="Enter password" required
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[@#$%&*!]).{8,16}"
+                title="Use atleast one capital,small,special character and digit with min 8">
+            <br>
+            <br>
+            <button type="submit" value="Login">Login</button>
+            <br>
+            <br>
+            <a href="./Forgot.html">Forgot Password</a>&emsp;
+            <a href="./Register.html">Register Here</a>
+        </form>
+    </center>
+
+
+    </form>
+</body>
+
+</html>
